@@ -1,3 +1,48 @@
 body {
     padding-top: 5rem;
+    position: static;
 }
+
+h1{
+   font-weight:bold;
+   }
+.label{
+   font-weight:bold;
+   }
+.flashed {
+    font-weight: bold;
+    color: green;
+    font-size: 100px;
+    }
+.req{
+   font-weight:bold;
+   color: red;
+   }
+button{  
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 70px;
+  height: 35px;
+  background-color:rgba(116, 177, 239, 1);
+ } 
+ 
+.newul{
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 5px 10px;
+  background-color:black;
+ 
+  }
+ 
+
+li b{
+  display:block;
+  margin: 0px;
+  padding: 5px 5px;
+  font-size: 15px;
+  color: white;
+  background-color:black;
+  }

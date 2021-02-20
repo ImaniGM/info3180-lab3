@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block main %} 
+
+           
+	<ul class= "newul">
+	 
+	    <li><b class="link" href="" target="_blank">Flask</b></li>
+	    <li><b class="link" href="" target="_blank">Home</b></li>
+	    <li><b class="link" href="" target="_blank">About</b></li>
+	    <li><b class="link" href="" target="_blank">Contact</b></li>
+	  
+	</ul>
+
+	</br>
+	<h1>Contact Form</h1>
+	<hr>
+	<p> Fill in this form to contact the site owners </p>
+	<form method="POST" action="{{ url_for('contact') }}">
+		<div class="form">
+		   
+		    {{ form.csrf_token }}
+		    
+		    <label class = "label" >{{ form.Name.label }} </label>
+		    <label class = "req"> (Required) </label> </br>
+		    <label for="desc"> Please enter your full name </label> </br>
+		    {{ form.Name(size=20) }} </br></br>
+		    
+		    <label class = "label" >{{ form.Email.label }} </label>
+		    <label class = "req"> (Required) </label> </br>
+		    <label for="desc">Please enter your e-mail address </label> </br>
+		    {{ form.Email(size=20) }} </br></br>
+		    
+		    <label class = "label" >{{ form.Subject.label }} </label>
+		    <label class = "req"> (Required) </label> </br>
+		    <label for="desc">Please enter the subject for your message </label> </br>  
+ 		    {{ form.Subject(size=20) }} </br></br>
+ 		    
+ 		    <label class = "label" >{{ form.Message.label }} </label>
+		    <label class = "req"> (Required) </label> </br>
+		    <label for="desc">Please enter the message you would like to send </label> </br>
+		    {{ form.Message(size=20) }} </br></br>
+		    
+		  
+		    <button id="bttn" type="submit" name="bttn">Send</button></br></br>
+	    </div>
+	</form>
+{% endblock %}
+
+
+
+
